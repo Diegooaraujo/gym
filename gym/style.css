@@ -1,0 +1,454 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 500px;
+  background-color: black;
+  position: relative;
+}
+
+.img-banner {
+  max-width: 50%;
+
+
+
+}
+
+.img-banner img {
+  width: 100%;
+  height: 500px;
+  opacity: 0.5;
+}
+
+.logo {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.logo-img {
+  width: 500px;
+}
+
+
+
+main {
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+main h2 {
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+
+}
+
+main h2 span {
+  color: rgb(255, 166, 0);
+  font-weight: bold;
+  font-size: 40px;
+
+}
+
+main p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+}
+
+.planos {
+  display: flex;
+  flex-direction: column;
+}
+
+.planos h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.lista-planos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.plano {
+  width: 300px;
+  height: 530px;
+  background-color: #333;
+  color: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 2px 6px 10px rgb(0, 0, 0);
+}
+
+.planos h3 {
+  font-size: 25px;
+}
+
+.preco p {
+
+  margin: 0;
+}
+
+#preco1 {
+  text-decoration: line-through;
+}
+
+.plano button {
+  padding: 12px 80px;
+  background-color: rgb(255, 166, 0);
+  border: none;
+  border-radius: 27px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 16px;
+
+}
+
+ul li {
+  padding: 6px;
+}
+
+
+.equipe {
+
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  /* max-height: 560px; */
+}
+
+.apresentacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.apresentacao h1 {
+  font-size: 40px;
+  margin: 0;
+
+}
+
+.apresentacao h3 {
+  margin: 0;
+}
+
+.personais {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  /*max-height: 441px;*/
+  margin-top: 30px;
+  
+}
+
+.pessoal {
+  text-align: center;
+
+  border-radius: 20px;
+  height: 441px;
+
+}
+
+.pessoal h3 {
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.pessoal:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+
+}
+
+/**/
+
+
+.pessoal {
+  width: 250px;
+  box-shadow: 2px 6px 10px rgb(0, 0, 0);
+  perspective: 1000px;
+  margin: 1rem;
+  text-align: center;
+  border-radius: 20px;
+  height: 441px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+
+
+
+}
+
+.card-front img {
+  width: 100%;
+  height: 90%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+}
+
+.card-back {
+  background-color: #222;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pessoal.flip .card {
+  transform: rotateY(180deg);
+
+}
+
+.card-back p {
+  padding: 10px;
+}
+
+/*responsividade*/
+/* RESPONSIVIDADE GERAL */
+@media (max-width: 3000px) {
+  body{
+    max-width: 1444px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .logo-img {
+    width: 300px;
+  }
+
+  .planos h1,
+  .apresentacao h1 {
+    font-size: 32px;
+  }
+
+  .plano {
+    margin-bottom: 30px;
+  }
+
+  .personais {
+    flex-wrap: wrap;
+    gap: 30px;
+    max-height: unset;
+  }
+  .logo img{
+    width: 600px;
+  }
+  main h2{
+    font-size: 60px;
+  }
+  main h2 span{
+    font-size: 70px;
+  }
+  .plano {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  
+  }
+  main p{
+    font-size: 30px;
+  }
+  .planos h1{
+    font-size: 50px;
+  }
+  .plano p{
+    font-size: 40px;
+  }
+  .plano button{
+    font-size: 30px;
+  }
+  .plano h3{
+    font-size: 40px;
+  }
+  .lista ul li{
+    font-size: 30px;
+  }
+  .apresentacao h1{
+    font-size: 80px;
+  }
+  .apresentacao h3{
+    font-size: 30px;
+  }
+   .pessoal {
+    width: 100%;
+    max-width: 700px;
+    height: 870px;
+  }
+  .card-front h3{
+    font-size: 40px;
+  }
+
+  .card-front img {
+    height: 100%;
+  }
+  footer{
+    font-size: 28px;
+  }
+  .card-back h3 {
+    font-size: 50px;
+  }
+  .card-back p {
+    padding: 20px;
+    font-size: 30px;
+  }
+  
+}
+
+
+
+@media (max-width: 480px) {
+  .logo img{
+    width: 600px;
+  }
+  main h2{
+    font-size: 60px;
+  }
+  main h2 span{
+    font-size: 70px;
+  }
+  .plano {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  
+  }
+  main p{
+    font-size: 30px;
+  }
+  .planos h1{
+    font-size: 50px;
+  }
+  .plano p{
+    font-size: 40px;
+  }
+  .plano button{
+    font-size: 30px;
+  }
+  .plano h3{
+    font-size: 40px;
+  }
+  .lista ul li{
+    font-size: 30px;
+  }
+  .apresentacao h1{
+    font-size: 80px;
+  }
+  .apresentacao h3{
+    font-size: 30px;
+  }
+   .pessoal {
+    width: 100%;
+    max-width: 700px;
+    height: 870px;
+  }
+  .card-front h3{
+    font-size: 40px;
+  }
+
+  .card-front img {
+    height: 100%;
+  }
+  footer{
+    font-size: 28px;
+  }
+  .card-back h3 {
+    font-size: 50px;
+  }
+  .card-back p {
+    padding: 20px;
+    font-size: 30px;
+  }
+
+
+  
+}
+
+  
+@media (max-width: 360px) {
+  .logo img{
+    width: 600px;
+  }
+  main h2{
+    font-size: 60px;
+  }
+  main h2 span{
+    font-size: 70px;
+  }
+  .plano {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  
+  }
+  main p{
+    font-size: 30px;
+  }
+  .planos h1{
+    font-size: 50px;
+  }
+  .plano p{
+    font-size: 40px;
+  }
+  .plano button{
+    font-size: 30px;
+  }
+  .plano h3{
+    font-size: 40px;
+  }
+  .lista ul li{
+    font-size: 30px;
+  }
+}
