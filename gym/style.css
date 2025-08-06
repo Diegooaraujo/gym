@@ -262,6 +262,63 @@ footer {
 .card-back p {
   padding: 10px;
 }
+.atletas{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+.atletas-apresentacao h1{
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+  
+}
+.atletas-apresentacao h3{
+  font-size: 30px;
+  margin: 0;
+  
+}
+.atletas-apresentacao p{
+  margin: 0 auto;
+  width: 600px;
+  margin-top: 20px;
+  
+}
+.atleta{
+  background-color: #fff;
+  box-shadow: 2px 6px 10px rgb(0, 0, 0);
+  width: 700px;
+  margin: 0 auto;
+  border-radius: 20px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.atleta h2{
+  color: black;
+  font-family: poppins;
+}
+.atleta img{
+  width: 100%;
+  
+  height: auto;
+ border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  
+}
+.atletas-apresentacao{
+  background-color: #222;
+  padding: 20px;
+  
+}
+.atletas-apresentacao h1,h3,h2,p{
+  color: #fff;
+  font-family: poppins;
+}
+
 
 /*responsividade*/
 /* RESPONSIVIDADE GERAL */
@@ -365,7 +422,6 @@ footer {
     
   }
   .atletas-apresentacao p{
-    margin: 0 auto;
     width: 100%;
     margin-top: 20px;
     font-size: 30px;
@@ -374,8 +430,8 @@ footer {
   }
   .atleta{
     width: 100%;
-    max-width: 900px;
-    height: auto;
+    
+    height: 650px;
     margin-top: 20px;
     
   }
@@ -385,68 +441,12 @@ footer {
   }
   .atleta img{
     width: 100%;
-    height: auto;
+    height: 650px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     
   }
   
-}
-.atletas{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-
-}
-.atletas-apresentacao h1{
-  font-size: 50px;
-  font-weight: bold;
-  margin: 0;
-  
-}
-.atletas-apresentacao h3{
-  font-size: 30px;
-  margin: 0;
-  
-}
-.atletas-apresentacao p{
-  margin: 0 auto;
-  width: 600px;
-  margin-top: 20px;
-  
-}
-.atleta{
-  background-color: #fff;
-  box-shadow: 2px 6px 10px rgb(0, 0, 0);
-  width: 700px;
-  margin: 0 auto;
-  border-radius: 20px;
-  text-align: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-}
-.atleta h2{
-  color: black;
-  font-family: poppins;
-}
-.atleta img{
-  width: 100%;
-  
-  height: auto;
- border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  
-}
-.atletas-apresentacao{
-  background-color: #222;
-  padding: 20px;
-  
-}
-.atletas-apresentacao h1,h3,h2,p{
-  color: #fff;
-  font-family: poppins;
 }
 
 
@@ -516,43 +516,7 @@ footer {
     padding: 20px;
     font-size: 30px;
   }
-  .atletas-apresentacao h1{
-    font-size: 100px ;
-    font-weight: bold ;
-    margin: 0;
-    
-  }
-  .atletas-apresentacao h3{
-    font-size: 50px;
-    margin: 0;
-    
-  }
-  .atletas-apresentacao p{
-    
-    width: 100% ;
-    margin-top: 20px;
-    font-size: 30px;
-    
-    
-  }
-  .atleta{
-    width: 100% ;
-    
-    height: auto;
-    margin-top: 20px;
-    
-  }
-  .atleta h2{
-    font-size:40px;
-    margin: 0;
-  }
-  .atleta img{
-    width: 100% ;
-    height: auto;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    
-  }
+ 
 
 
   
