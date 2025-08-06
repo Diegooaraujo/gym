@@ -353,6 +353,43 @@ footer {
     padding: 20px;
     font-size: 30px;
   }
+  .atletas-apresentacao h1{
+    font-size: 100px;
+    font-weight: bold;
+    margin: 0;
+    
+  }
+  .atletas-apresentacao h3{
+    font-size: 50px;
+    margin: 0;
+    
+  }
+  .atletas-apresentacao p{
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 30px;
+    
+    
+  }
+  .atleta{
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin-top: 20px;
+    
+  }
+  .atleta h2{
+    font-size:40px;
+    margin: 0;
+  }
+  .atleta img{
+    width: 100%;
+    height: auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+  }
   
 }
 .atletas{
@@ -556,41 +593,5 @@ footer {
   .lista ul li{
     font-size: 30px;
   }
-  .atletas-apresentacao h1{
-    font-size: 100px;
-    font-weight: bold;
-    margin: 0;
-    
-  }
-  .atletas-apresentacao h3{
-    font-size: 50px;
-    margin: 0;
-    
-  }
-  .atletas-apresentacao p{
-    margin: 0 auto;
-    width: 100%;
-    margin-top: 20px;
-    font-size: 30px;
-    
-    
-  }
-  .atleta{
-    width: 100%;
-    max-width: 900px;
-    height: auto;
-    margin-top: 20px;
-    
-  }
-  .atleta h2{
-    font-size:40px;
-    margin: 0;
-  }
-  .atleta img{
-    width: 100%;
-    height: auto;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    
-  }
+  
 }
